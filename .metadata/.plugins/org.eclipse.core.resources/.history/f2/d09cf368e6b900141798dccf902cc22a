@@ -1,0 +1,31 @@
+/**
+ * Definition for binary tree
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+    public boolean hasPathSum(TreeNode root, int sum) {
+        if (root == null) return false;
+        
+    }
+    
+    public Boolean traverse(TreeNode node, int rem) {
+		if (node.left == null && node.right == null) {
+			res -= node.val;
+			if (res == 0) return true;
+		}
+		node.val;
+		traverse(node.right, rem - node.val);
+		traverse(node.left, rem - node.val);
+		
+		
+	}
+    
+    public static void main(String[] args) {
+		
+	}
+}
