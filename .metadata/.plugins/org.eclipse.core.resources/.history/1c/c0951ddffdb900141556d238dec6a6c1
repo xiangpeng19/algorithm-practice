@@ -11,16 +11,12 @@ public class Solution {
     	if (numbers.length < 2) return null;
         HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
         for (int i = 0; i < numbers.length; i++) {
-        	
-        	if (!map.containsKey(numbers[i])) 
-        		map.put(numbers[i], 1);        	
-        	
+        	if (!map.containsKey(numbers[i])) map.put(numbers[i], 1);
         	if (map.containsKey(target - numbers[i])) {
         		index[0] = i;
         		temp = target - numbers[i];
         		break;
-        	}        	
-
+        	}
         }
         
         for (int i = index[0] + 1; i < numbers.length; i++) {
@@ -35,7 +31,7 @@ public class Solution {
     public static void main(String[] args) {
 		int numbers[] = {1,2,3,4,5,6,7,8,9};
 		int a[];
-		a = new Solution().twoSum(numbers, 3);
+		a = new Solution().twoSum(numbers, 4);
 		for (int i : a) {
 			System.out.println(i);
 		}
