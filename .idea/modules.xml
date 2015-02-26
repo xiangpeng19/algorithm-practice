@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Amazon Preparation/Amazon Preparation.iml" filepath="$PROJECT_DIR$/Amazon Preparation/Amazon Preparation.iml" />
       <module fileurl="file://$PROJECT_DIR$/Balanced Binary Tree/Balanced Binary Tree.iml" filepath="$PROJECT_DIR$/Balanced Binary Tree/Balanced Binary Tree.iml" />
       <module fileurl="file://$PROJECT_DIR$/Best Time to Buy and Sell Stock/Best Time to Buy and Sell Stock.iml" filepath="$PROJECT_DIR$/Best Time to Buy and Sell Stock/Best Time to Buy and Sell Stock.iml" />
       <module fileurl="file://$PROJECT_DIR$/Best Time to Buy and Sell Stock II/Best Time to Buy and Sell Stock II.iml" filepath="$PROJECT_DIR$/Best Time to Buy and Sell Stock II/Best Time to Buy and Sell Stock II.iml" />
       <module fileurl="file://$PROJECT_DIR$/Binary Tree Inorder Traversal/Binary Tree Inorder Traversal.iml" filepath="$PROJECT_DIR$/Binary Tree Inorder Traversal/Binary Tree Inorder Traversal.iml" />
       <module fileurl="file://$PROJECT_DIR$/Binary Tree Preorder Traversal/Binary Tree Preorder Traversal.iml" filepath="$PROJECT_DIR$/Binary Tree Preorder Traversal/Binary Tree Preorder Traversal.iml" />
       <module fileurl="file://$PROJECT_DIR$/Climbing Stairs/Climbing Stairs.iml" filepath="$PROJECT_DIR$/Climbing Stairs/Climbing Stairs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Compare Version Numbers/Compare Version Numbers.iml" filepath="$PROJECT_DIR$/Compare Version Numbers/Compare Version Numbers.iml" />
       <module fileurl="file://$PROJECT_DIR$/Convert Sorted Array to Binary Search Tree/Convert Sorted Array to Binary Search Tree.iml" filepath="$PROJECT_DIR$/Convert Sorted Array to Binary Search Tree/Convert Sorted Array to Binary Search Tree.iml" />
       <module fileurl="file://$PROJECT_DIR$/Convert Sorted List to Binary Search Tree/Convert Sorted List to Binary Search Tree.iml" filepath="$PROJECT_DIR$/Convert Sorted List to Binary Search Tree/Convert Sorted List to Binary Search Tree.iml" />
       <module fileurl="file://$PROJECT_DIR$/Excel Sheet Column Number/Excel Sheet Column Number.iml" filepath="$PROJECT_DIR$/Excel Sheet Column Number/Excel Sheet Column Number.iml" />
@@ -46,6 +48,7 @@
       <module fileurl="file://$PROJECT_DIR$/Single Number II/Single Number II.iml" filepath="$PROJECT_DIR$/Single Number II/Single Number II.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sort Colors/Sort Colors.iml" filepath="$PROJECT_DIR$/Sort Colors/Sort Colors.iml" />
       <module fileurl="file://$PROJECT_DIR$/Swap Nodes in Pairs/Swap Nodes in Pairs.iml" filepath="$PROJECT_DIR$/Swap Nodes in Pairs/Swap Nodes in Pairs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Triangle/Triangle.iml" filepath="$PROJECT_DIR$/Triangle/Triangle.iml" />
       <module fileurl="file://$PROJECT_DIR$/Two Sum/Two Sum.iml" filepath="$PROJECT_DIR$/Two Sum/Two Sum.iml" />
       <module fileurl="file://$PROJECT_DIR$/Unique Binary Search Trees/Unique Binary Search Trees.iml" filepath="$PROJECT_DIR$/Unique Binary Search Trees/Unique Binary Search Trees.iml" />
       <module fileurl="file://$PROJECT_DIR$/Unique Paths/Unique Paths.iml" filepath="$PROJECT_DIR$/Unique Paths/Unique Paths.iml" />
