@@ -10,26 +10,49 @@ import java.util.regex.Pattern;
  */
 public class Solution {
 
-    public void Min(int A[]) {
-        if (A.length == 0) return;
-        int start = 0, end = A.length - 1;
-        int mid = 0;
+   public int Cars(String present, String desired) {
+        if (desired == null || present == null) return -1;
+        if (present.length() != desired.length()) return -1;
+        if (present.equals(desired)) return 0;
 
-        if (A[start] < A[end]) System.out.println(A[start]);
+        char[] Pres = present.toCharArray();
+        char[] Desi = desired.toCharArray();
+        int count = 0;
 
-        while (start < end) {
-            mid =(start + end) / 2;
+        for (int i = 0; i < present.length(); i++) {
 
-            if (A[mid] < A[end]) end = mid;
-            else if (A[mid] > A[end]) start = mid + 1;
+            //if the spots are same, just find next spot
+            if (Pres[i] == Desi[i]) continue;
+
+            //if the present spot has a car, and the desire spot doesn't, we have to move a car to here
+            if (Pres[i] == ' ' && Desi[i] != ' ') {
+                int j = i + 1;//the nearest spot which has a car in the present string
+                for (; j < Pres.length && Pres[j] == ' '; j++) ;
+                char temp = Pres[i];
+                Pres[i] = Pres[j];
+                Pres[j] = temp;
+                count += j - i;
+            }
+
+            //if the present spot does have a car, and the desire spot has, we have to remove a car from here
+            if (Pres[i] != ' ' && Desi[i] == ' ') {
+                int j = i + 1;//the nearest spot which does have a car in the present string
+                for (; j < Pres.length && Pres[j] != ' '; j++) ;
+                char temp = Pres[i];
+                Pres[i] = Pres[j];
+                Pres[j] = temp;
+                count += j - i;
+            }
         }
-        System.out.println(A[start]);
+       return count;
+   }
 
-    }
+
 
     public static void main(String[] args) {
-        int A[] = {5,6,7,8,9,10,1,2,3,4};
+        String present = "  1  ";
+        String desired = "1    ";
+        System.out.println(new Solution().Cars(present, desired));
 
-        new Solution().Min(A);
     }
 }
