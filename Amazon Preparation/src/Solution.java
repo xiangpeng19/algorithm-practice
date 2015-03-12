@@ -10,49 +10,50 @@ import java.util.regex.Pattern;
  */
 public class Solution {
 
-   public int Cars(String present, String desired) {
-        if (desired == null || present == null) return -1;
-        if (present.length() != desired.length()) return -1;
-        if (present.equals(desired)) return 0;
+   public ArrayList<Integer> sameElement(ArrayList<Integer> list1, ArrayList<Integer> list2) {
+        ArrayList<Integer> temp = new ArrayList<Integer>();
+        Set<Integer> oldSet = new HashSet<Integer>();
+        Set<Integer> newSet = new HashSet<Integer>();
+        for (int i : list1)
+            oldSet.add(i);
 
-        char[] Pres = present.toCharArray();
-        char[] Desi = desired.toCharArray();
-        int count = 0;
-
-        for (int i = 0; i < present.length(); i++) {
-
-            //if the spots are same, just find next spot
-            if (Pres[i] == Desi[i]) continue;
-
-            //if the present spot has a car, and the desire spot doesn't, we have to move a car to here
-            if (Pres[i] == ' ' && Desi[i] != ' ') {
-                int j = i + 1;//the nearest spot which has a car in the present string
-                for (; j < Pres.length && Pres[j] == ' '; j++) ;
-                char temp = Pres[i];
-                Pres[i] = Pres[j];
-                Pres[j] = temp;
-                count += j - i;
-            }
-
-            //if the present spot does have a car, and the desire spot has, we have to remove a car from here
-            if (Pres[i] != ' ' && Desi[i] == ' ') {
-                int j = i + 1;//the nearest spot which does have a car in the present string
-                for (; j < Pres.length && Pres[j] != ' '; j++) ;
-                char temp = Pres[i];
-                Pres[i] = Pres[j];
-                Pres[j] = temp;
-                count += j - i;
-            }
+        for (int i : list2) {
+            if (oldSet.contains(i))
+                newSet.add(i);
         }
-       return count;
+
+        Iterator it = newSet.iterator();
+        while (it.hasNext()) {
+            temp.add((Integer)it.next());
+        }
+
+        return temp;
+
+    HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+       map.put();
+       map.containsKey();
+       Set set = map.entrySet();
+       Iterator it = set.iterator();
+       while (it.hasNext()) {
+           Map.Entry entry = it.next();
+           entry.getKey();
+           entry.getValue();
+       }
+
    }
 
 
 
     public static void main(String[] args) {
-        String present = "  1  ";
-        String desired = "1    ";
-        System.out.println(new Solution().Cars(present, desired));
+        ArrayList<Integer> list1 = new ArrayList<Integer>();
+        ArrayList<Integer> list2 = new ArrayList<Integer>();
+        ArrayList<Integer> temp = new ArrayList<Integer>();
+        list1.add(1);
+        list1.add(3);
+        list1.add(2);
+        list2.add(5);
+        temp = new Solution().sameElement(list1, list2);
+        for (int i : temp) System.out.print(i);
 
     }
 }
