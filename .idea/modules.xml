@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Add Binary/Add Binary.iml" filepath="$PROJECT_DIR$/Add Binary/Add Binary.iml" />
       <module fileurl="file://$PROJECT_DIR$/Amazon Preparation/Amazon Preparation.iml" filepath="$PROJECT_DIR$/Amazon Preparation/Amazon Preparation.iml" />
       <module fileurl="file://$PROJECT_DIR$/Balanced Binary Tree/Balanced Binary Tree.iml" filepath="$PROJECT_DIR$/Balanced Binary Tree/Balanced Binary Tree.iml" />
       <module fileurl="file://$PROJECT_DIR$/Best Time to Buy and Sell Stock/Best Time to Buy and Sell Stock.iml" filepath="$PROJECT_DIR$/Best Time to Buy and Sell Stock/Best Time to Buy and Sell Stock.iml" />
@@ -29,6 +30,7 @@
       <module fileurl="file://$PROJECT_DIR$/Merge Sorted Array/Merge Sorted Array.iml" filepath="$PROJECT_DIR$/Merge Sorted Array/Merge Sorted Array.iml" />
       <module fileurl="file://$PROJECT_DIR$/Merge Two Sorted Lists/Merge Two Sorted Lists.iml" filepath="$PROJECT_DIR$/Merge Two Sorted Lists/Merge Two Sorted Lists.iml" />
       <module fileurl="file://$PROJECT_DIR$/Minimum Path Sum/Minimum Path Sum.iml" filepath="$PROJECT_DIR$/Minimum Path Sum/Minimum Path Sum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Number of 1 Bits/Number of 1 Bits.iml" filepath="$PROJECT_DIR$/Number of 1 Bits/Number of 1 Bits.iml" />
       <module fileurl="file://$PROJECT_DIR$/Palindrome Number/Palindrome Number.iml" filepath="$PROJECT_DIR$/Palindrome Number/Palindrome Number.iml" />
       <module fileurl="file://$PROJECT_DIR$/Path Sum/Path Sum.iml" filepath="$PROJECT_DIR$/Path Sum/Path Sum.iml" />
       <module fileurl="file://$PROJECT_DIR$/Remove Duplicates from Sorted Array/Remove Duplicates from Sorted Array.iml" filepath="$PROJECT_DIR$/Remove Duplicates from Sorted Array/Remove Duplicates from Sorted Array.iml" />
