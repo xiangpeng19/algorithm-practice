@@ -19,6 +19,7 @@
       <module fileurl="file://$PROJECT_DIR$/Find Peak Element/Find Peak Element.iml" filepath="$PROJECT_DIR$/Find Peak Element/Find Peak Element.iml" />
       <module fileurl="file://$PROJECT_DIR$/Generate Parentheses/Generate Parentheses.iml" filepath="$PROJECT_DIR$/Generate Parentheses/Generate Parentheses.iml" />
       <module fileurl="file://$PROJECT_DIR$/Gray Code/Gray Code.iml" filepath="$PROJECT_DIR$/Gray Code/Gray Code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Happy Number/Happy Number.iml" filepath="$PROJECT_DIR$/Happy Number/Happy Number.iml" />
       <module fileurl="file://$PROJECT_DIR$/Intersection of Two Linked Lists/Intersection of Two Linked Lists.iml" filepath="$PROJECT_DIR$/Intersection of Two Linked Lists/Intersection of Two Linked Lists.iml" />
       <module fileurl="file://$PROJECT_DIR$/Jump Game/Jump Game.iml" filepath="$PROJECT_DIR$/Jump Game/Jump Game.iml" />
       <module fileurl="file://$PROJECT_DIR$/Leetcode/Leetcode.iml" filepath="$PROJECT_DIR$/Leetcode/Leetcode.iml" />
@@ -62,6 +63,7 @@
       <module fileurl="file://$PROJECT_DIR$/Unique Binary Search Trees/Unique Binary Search Trees.iml" filepath="$PROJECT_DIR$/Unique Binary Search Trees/Unique Binary Search Trees.iml" />
       <module fileurl="file://$PROJECT_DIR$/Unique Paths/Unique Paths.iml" filepath="$PROJECT_DIR$/Unique Paths/Unique Paths.iml" />
       <module fileurl="file://$PROJECT_DIR$/Unique Paths II/Unique Paths II.iml" filepath="$PROJECT_DIR$/Unique Paths II/Unique Paths II.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Validate Binary Search Tree/Validate Binary Search Tree.iml" filepath="$PROJECT_DIR$/Validate Binary Search Tree/Validate Binary Search Tree.iml" />
     </modules>
   </component>
 </project>
