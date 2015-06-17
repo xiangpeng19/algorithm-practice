@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/Binary Tree Preorder Traversal/Binary Tree Preorder Traversal.iml" filepath="$PROJECT_DIR$/Binary Tree Preorder Traversal/Binary Tree Preorder Traversal.iml" />
       <module fileurl="file://$PROJECT_DIR$/Climbing Stairs/Climbing Stairs.iml" filepath="$PROJECT_DIR$/Climbing Stairs/Climbing Stairs.iml" />
       <module fileurl="file://$PROJECT_DIR$/Compare Version Numbers/Compare Version Numbers.iml" filepath="$PROJECT_DIR$/Compare Version Numbers/Compare Version Numbers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Contains Duplicate/Contains Duplicate.iml" filepath="$PROJECT_DIR$/Contains Duplicate/Contains Duplicate.iml" />
       <module fileurl="file://$PROJECT_DIR$/Convert Sorted Array to Binary Search Tree/Convert Sorted Array to Binary Search Tree.iml" filepath="$PROJECT_DIR$/Convert Sorted Array to Binary Search Tree/Convert Sorted Array to Binary Search Tree.iml" />
       <module fileurl="file://$PROJECT_DIR$/Convert Sorted List to Binary Search Tree/Convert Sorted List to Binary Search Tree.iml" filepath="$PROJECT_DIR$/Convert Sorted List to Binary Search Tree/Convert Sorted List to Binary Search Tree.iml" />
       <module fileurl="file://$PROJECT_DIR$/Excel Sheet Column Number/Excel Sheet Column Number.iml" filepath="$PROJECT_DIR$/Excel Sheet Column Number/Excel Sheet Column Number.iml" />
@@ -57,6 +58,7 @@
       <module fileurl="file://$PROJECT_DIR$/Sort Colors/Sort Colors.iml" filepath="$PROJECT_DIR$/Sort Colors/Sort Colors.iml" />
       <module fileurl="file://$PROJECT_DIR$/String to Integer (atoi)/String to Integer (atoi).iml" filepath="$PROJECT_DIR$/String to Integer (atoi)/String to Integer (atoi).iml" />
       <module fileurl="file://$PROJECT_DIR$/Subsets/Subsets.iml" filepath="$PROJECT_DIR$/Subsets/Subsets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sum Root to Leaf Numbers/Sum Root to Leaf Numbers.iml" filepath="$PROJECT_DIR$/Sum Root to Leaf Numbers/Sum Root to Leaf Numbers.iml" />
       <module fileurl="file://$PROJECT_DIR$/Swap Nodes in Pairs/Swap Nodes in Pairs.iml" filepath="$PROJECT_DIR$/Swap Nodes in Pairs/Swap Nodes in Pairs.iml" />
       <module fileurl="file://$PROJECT_DIR$/Triangle/Triangle.iml" filepath="$PROJECT_DIR$/Triangle/Triangle.iml" />
       <module fileurl="file://$PROJECT_DIR$/Two Sum/Two Sum.iml" filepath="$PROJECT_DIR$/Two Sum/Two Sum.iml" />
