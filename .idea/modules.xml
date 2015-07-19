@@ -15,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/Contains Duplicate/Contains Duplicate.iml" filepath="$PROJECT_DIR$/Contains Duplicate/Contains Duplicate.iml" />
       <module fileurl="file://$PROJECT_DIR$/Convert Sorted Array to Binary Search Tree/Convert Sorted Array to Binary Search Tree.iml" filepath="$PROJECT_DIR$/Convert Sorted Array to Binary Search Tree/Convert Sorted Array to Binary Search Tree.iml" />
       <module fileurl="file://$PROJECT_DIR$/Convert Sorted List to Binary Search Tree/Convert Sorted List to Binary Search Tree.iml" filepath="$PROJECT_DIR$/Convert Sorted List to Binary Search Tree/Convert Sorted List to Binary Search Tree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Delete Node in a Linked List/Delete Node in a Linked List.iml" filepath="$PROJECT_DIR$/Delete Node in a Linked List/Delete Node in a Linked List.iml" />
       <module fileurl="file://$PROJECT_DIR$/Excel Sheet Column Number/Excel Sheet Column Number.iml" filepath="$PROJECT_DIR$/Excel Sheet Column Number/Excel Sheet Column Number.iml" />
       <module fileurl="file://$PROJECT_DIR$/Find Minimum in Rotated Sorted Array/Find Minimum in Rotated Sorted Array.iml" filepath="$PROJECT_DIR$/Find Minimum in Rotated Sorted Array/Find Minimum in Rotated Sorted Array.iml" />
       <module fileurl="file://$PROJECT_DIR$/Find Peak Element/Find Peak Element.iml" filepath="$PROJECT_DIR$/Find Peak Element/Find Peak Element.iml" />
@@ -46,6 +47,7 @@
       <module fileurl="file://$PROJECT_DIR$/Restore IP Addresses/Restore IP Addresses.iml" filepath="$PROJECT_DIR$/Restore IP Addresses/Restore IP Addresses.iml" />
       <module fileurl="file://$PROJECT_DIR$/Reverse Integer/Reverse Integer.iml" filepath="$PROJECT_DIR$/Reverse Integer/Reverse Integer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Roman to Integer/Roman to Integer.iml" filepath="$PROJECT_DIR$/Roman to Integer/Roman to Integer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Rotate Array/Rotate Array.iml" filepath="$PROJECT_DIR$/Rotate Array/Rotate Array.iml" />
       <module fileurl="file://$PROJECT_DIR$/Rotate Image/Rotate Image.iml" filepath="$PROJECT_DIR$/Rotate Image/Rotate Image.iml" />
       <module fileurl="file://$PROJECT_DIR$/Same Tree/Same Tree.iml" filepath="$PROJECT_DIR$/Same Tree/Same Tree.iml" />
       <module fileurl="file://$PROJECT_DIR$/Search Insert Position/Search Insert Position.iml" filepath="$PROJECT_DIR$/Search Insert Position/Search Insert Position.iml" />
@@ -66,6 +68,7 @@
       <module fileurl="file://$PROJECT_DIR$/Unique Paths/Unique Paths.iml" filepath="$PROJECT_DIR$/Unique Paths/Unique Paths.iml" />
       <module fileurl="file://$PROJECT_DIR$/Unique Paths II/Unique Paths II.iml" filepath="$PROJECT_DIR$/Unique Paths II/Unique Paths II.iml" />
       <module fileurl="file://$PROJECT_DIR$/Validate Binary Search Tree/Validate Binary Search Tree.iml" filepath="$PROJECT_DIR$/Validate Binary Search Tree/Validate Binary Search Tree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Word Break/Word Break.iml" filepath="$PROJECT_DIR$/Word Break/Word Break.iml" />
     </modules>
   </component>
 </project>
