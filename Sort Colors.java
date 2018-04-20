@@ -33,4 +33,38 @@ class Solution {
         nums[x] = nums[y];
         nums[y] = temp;
     }
+
+
+    public void sortColors(int[] nums) {
+        if (nums == null || nums.length < 2) {
+            return;
+        }
+        // zero points to the first non zero element
+        int zero = 0;
+        while (zero < nums.length && nums[zero] == 0) {
+            zero++;
+        }
+        // second points to the first non 2 element from the last
+        int second = nums.length - 1;
+        while (second >= 0 && nums[second] == 2) {
+            second--;
+        }
+
+        int i = zero;
+
+        while (i <= second) {
+            if (nums[i] == 0) {
+                swap(nums, zero, i);
+                zero++;
+                i++;
+            } else if (nums[i] == 2) {
+                swap(nums, second, i);
+                second--;
+            } else {
+                i++;
+            }
+
+
+        }
+    }
 }
