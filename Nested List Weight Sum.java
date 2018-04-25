@@ -47,4 +47,28 @@
         }
         return res;
     }
+
+
+
+    private int sum = 0;
+    
+    public int depthSum(List<NestedInteger> nestedList) {
+        if (nestedList == null || nestedList.size() == 0) {
+            return 0;
+        }
+        sum(nestedList, 1);
+        
+        return sum;
+    }
+    
+    private void sum(List<NestedInteger> list, int depth) {
+        
+        for (NestedInteger i : list) {
+            if (i.isInteger()) {
+                sum += i.getInteger() * depth;
+            } else {
+                sum(i.getList(), depth + 1);
+            }
+        }
+    }
 }

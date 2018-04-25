@@ -34,4 +34,33 @@ public class Solution {
 			System.out.println(s);
 		}
 	}
+
+
+	public List<String> generateParenthesis(int n) {
+        List<String> res = new ArrayList<>();
+        if (n < 1) {
+            return res;
+        }
+
+        generate(res, n, n, "");
+
+        return res;
+
+
+    }
+
+    public void generate(List<String> res, int l, int r, String cur) {
+        if (l < 0 || r < 0) {
+            return;
+        }
+        if (l == 0 && r == 0) {
+            res.add(cur);
+        }
+
+        if (l <= r) {
+            generate(res, l - 1, r, cur + "(");
+        }
+
+        generate(res, l, r - 1, cur + ")");
+    }
 }
