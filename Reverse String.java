@@ -17,6 +17,15 @@ class Solution {
     }
 
 
+    public String recursive(String s) {
+        if (s.length() == 1) {
+            return s;
+        } else {
+            return recursive(s.substring(1)) + s.charAt(0);
+        }
+    }
+
+
     private void swap(char[] as, int i, int j) {
         char t = as[i];
         as[i] = as[j];
