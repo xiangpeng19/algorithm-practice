@@ -66,4 +66,24 @@ class Solution {
         return result;
     }
 
+    public List<Interval> merge(List<Interval> intervals) {
+        List<Interval> res = new ArrayList<>();
+        if (intervals == null || intervals.size() == 0) {
+            return res;
+        }
+
+        Collections.sort(intervals, Comparator.comparingInt(o -> o.start));
+        res.add(intervals.get(0));
+
+        for (Interval i : intervals) {
+            Interval last = res.get(res.size() - 1);
+            if (last.end >= i.start) {
+                last.end = Math.max(last.end, i.end);
+            } else {
+                res.add(i);
+            }
+        }
+        return res;
+    }
+
 }
