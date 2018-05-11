@@ -1,7 +1,5 @@
-import java.util.ArrayList;
-import java.util.List;
 /**
- * Definition for binary tree
+ * Definition for a binary tree node.
  * public class TreeNode {
  *     int val;
  *     TreeNode left;
@@ -9,20 +7,49 @@ import java.util.List;
  *     TreeNode(int x) { val = x; }
  * }
  */
-
-
-public class Solution {
+class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
-        List<Integer> list = new ArrayList<Integer>();
-        inorder(root, list);
-        return list;
+        
+        if (root == null) {
+            return new ArrayList<Integer>();
+        }
+
+        List<Integer> res = new ArrayList<>();
+        
+        dfs(root, res);
+        return res;
+        
     }
-    
-    public void inorder(TreeNode root, List<Integer> list) {
-		if (root == null) return;
-//    	if (root.left == null && root.right == null) list.add(root.val);
-		inorder(root.left, list);
-		list.add(root.val);
-		inorder(root.right, list);
-	}
+
+    private void dfs(TreeNode root, List<Integer> res) {
+        if (root == null) {
+            return;
+        }
+
+        dfs(root.left);
+        res.add(root.val);
+        dfs(root.right);
+    }
+
+
+    public List<Integer> inorderTraversal(TreeNode root) {
+        Stack<TreeNode> stack = new Stack<>();
+        
+        List<Integer> res = new ArrayList<>();
+        
+        while (root != null || !stack.isEmpty()) {
+            while (root != null) {
+                stack.push(root);
+                root = root.left;
+            }
+
+            root = stack.pop();
+            res.add(root.val);
+            root = root.right;
+
+        }
+
+        return res;
+
+    }
 }
