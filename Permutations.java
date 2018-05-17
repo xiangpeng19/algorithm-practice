@@ -26,4 +26,34 @@ public class Solution {
            cur.remove(cur.size() - 1);
        }
     }
+
+
+    public List<List<Integer>> permute(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+
+        if (nums == null || nums.length == 0) {
+            return res;
+        }
+        boolean[] isVisited = new boolean[nums.length];
+        find(res, isVisited, new ArrayList<Integer>(), nums);
+
+        return res;
+    }
+
+    private void find(List<List<Integer>> res, boolean[] isVisited, List<Integer> cur, int[] nums) {
+        if (cur.size() == nums.length) {
+            res.add(new ArrayList<>(cur));
+        }
+
+        for (int i = 0; i < nums.length; i++) {
+            if (isVisited[i]) {
+                continue;
+            }
+            isVisited[i] = true;
+            cur.add(nums[i]);
+            find(res, isVisited, cur, nums);
+            cur.remove(cur.size() - 1);
+            isVisited[i - 1] = false;
+        }
+    }
 }
