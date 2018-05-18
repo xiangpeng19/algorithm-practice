@@ -43,6 +43,7 @@ public class Solution {
     private void find(List<List<Integer>> res, boolean[] isVisited, List<Integer> cur, int[] nums) {
         if (cur.size() == nums.length) {
             res.add(new ArrayList<>(cur));
+            return;
         }
 
         for (int i = 0; i < nums.length; i++) {
@@ -53,7 +54,7 @@ public class Solution {
             cur.add(nums[i]);
             find(res, isVisited, cur, nums);
             cur.remove(cur.size() - 1);
-            isVisited[i - 1] = false;
+            isVisited[i] = false;
         }
     }
 }
