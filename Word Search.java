@@ -36,5 +36,49 @@ public class Solution {
         visited[rowindex][colindex] = false;  
         return res;  
     }
+
+
+    public boolean exist(char[][] board, String word) {
+        int row = board.length;
+        int col = board[0].length;
+        boolean[][] isVisited = new boolean[row][col];
+
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                if (search(board, word, isVisited, 0, i, j)) {
+                    return true;
+                }
+            }
+        }
+
+
+        return false;
+
+    }
+
+    private boolean search(char[][] board, String word, boolean[][] isVisited, int index, int x, int y) {
+        if (index == word.length()) {
+            return true;
+        }
+
+        if (x < 0 || x >= board.length || y < 0 || y >= board[0].length) {
+            return false;
+        }
+
+        if (word.charAt(index) != board[x][y] || isVisited[x][y]) {
+            return false;
+        }
+
+        isVisited[x][y] = true;
+
+        boolean found = search(board, word, isVisited, index + 1, x - 1, y)
+                || search(board, word, isVisited, index + 1, x + 1, y)
+                || search(board, word, isVisited, index + 1, x, y - 1)
+                || search(board, word, isVisited, index + 1, x, y + 1);
+        isVisited[x][y] = false;
+
+        return found;
+
+    }
  
 }
