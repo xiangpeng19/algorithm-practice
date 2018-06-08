@@ -28,4 +28,31 @@ public class Solution {
             return noCarry;
         }
     }
+
+
+
+    public int[] plusOne(int[] digits) {
+
+        if (digits == null || digits.length == 0) {
+            return digits;
+        }
+
+        int len = digits.length;
+
+        int carry = 1;
+
+        for (int i = len - 1; i >= 0; i--) {
+            int num = (digits[i] + carry) % 10;
+            carry = (digits[i] + carry) / 10;
+            digits[i] = num;
+        }
+
+        if (carry == 1) {
+            int[] res = new int[len + 1];
+            res[0] = 1;
+            return res;
+        } else {
+            return digits;
+        }
+    }
 }
