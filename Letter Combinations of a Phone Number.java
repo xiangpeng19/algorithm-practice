@@ -38,4 +38,34 @@ public class Solution {
         }
     }
 
+
+    public List<String> letterCombinations(String digits) {
+        List<String> res = new ArrayList<>();
+        if (digits == null || digits.length() == 0) {
+            return res;
+        }
+
+        String[] keyboard = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+
+        find(res, "", digits, keyboard, 0);
+        
+        return res;
+
+    }
+
+    private void find(List<String> res, String cur, String digits, String[] keyboard, int index) {
+        if (cur.length() == digits.length()) {
+            res.add(cur);
+            return;
+        }
+
+        for (int i = index; i < digits.length(); i++) {
+            int digit = digits.charAt(i) - '0';
+            for (int j = 0; j < keyboard[digit].length(); j++) {
+                find(res, cur + keyboard[digit].charAt(j), digits, keyboard, i + 1);
+            }
+        }
+
+    }
+
 }
