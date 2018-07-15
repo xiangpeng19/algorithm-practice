@@ -27,4 +27,42 @@ public class Solution {
         if (n % 2 == 1) res[n / 2][n / 2] =val;
         return res;
     }
+
+
+
+    public int[][] generateMatrix(int n) {
+        int levels = n / 2;
+        int[][] res = new int[n][n];
+        int v = 1;
+
+        for (int level = 0; level < levels; level++) {
+            for (int i = level; i < n - level - 1; i++) {
+                res[level][i] = v;
+                v++;
+            }
+
+            for (int i = level; i < n - level - 1; i++) {
+                res[i][n - level - 1] = v;
+                v++;
+            }
+
+            for (int i = n - level - 1; i > level; i--) {
+                res[n - level - 1][i] = v;
+                v++;
+            }
+            
+            for (int i = n - level - 1; i > level; i--) {
+                res[i][level] = v;
+                v++;
+            }
+
+        }
+
+        if (n % 2 == 1) {
+            res[n / 2][n / 2] = v;
+        }
+
+        return res;
+        
+    }
 }
