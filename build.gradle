@@ -1,12 +1,12 @@
 plugins {
     id 'java'
-    id 'idea' // optional, for Eclipse project
+    id "io.freefair.lombok" version "4.1.6"
 }
 
 group 'me.wenji'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 12
+sourceCompatibility = 11
 
 repositories {
     mavenCentral()
@@ -17,5 +17,8 @@ test {
 }
 
 dependencies {
-    testImplementation('org.junit.jupiter:junit-jupiter:5.5.2')
+    implementation("com.google.guava:guava:28.2-jre")
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.5.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.5.2'
+    testImplementation 'org.hamcrest:hamcrest:2.2'
 }
