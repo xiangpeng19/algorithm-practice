@@ -1,0 +1,4 @@
+package excludes
+
+rootProject.name = 'algorithm-practice'
+

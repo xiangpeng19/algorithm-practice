@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'idea' // optional, for Eclipse project
+}
+
+group 'me.wenji'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 12
+
+repositories {
+    mavenCentral()
+}
+
+test {
+    useJUnitPlatform()
+}
+
+dependencies {
+    testImplementation('org.junit.jupiter:junit-jupiter:5.5.2')
+}
