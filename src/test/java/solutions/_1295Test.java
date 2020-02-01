@@ -3,8 +3,8 @@ package solutions;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
-import solutions._1295.Solution1;
-import solutions._1295.Solution2;
+import solutions.algorithms._1295.Solution1;
+import solutions.algorithms._1295.Solution2;
 
 class _1295Test {
 

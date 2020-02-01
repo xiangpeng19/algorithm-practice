@@ -1,4 +1,4 @@
-package solutions;
+package solutions.algorithms;
 
 import java.util.stream.IntStream;
 

@@ -2,6 +2,7 @@ package solutions;
 
 import com.google.common.collect.Lists;
 import org.junit.jupiter.api.Test;
+import solutions.algorithms._46;
 
 import static com.google.common.collect.Collections2.permutations;
 import static org.hamcrest.MatcherAssert.assertThat;
