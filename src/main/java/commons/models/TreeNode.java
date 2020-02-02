@@ -1,11 +1,9 @@
 package commons.models;
 
-import lombok.Builder;
 import lombok.Value;
 import lombok.experimental.Accessors;
 
 @Value
-@Builder
 @Accessors(fluent = true)
 public class TreeNode {
 
@@ -14,6 +12,9 @@ public class TreeNode {
     TreeNode right;
 
     TreeNode(int x) {
-        val = x;
+        this.val = x;
+        this.left = null;
+        this.right = null;
+
     }
 }

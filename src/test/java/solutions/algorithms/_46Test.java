@@ -1,12 +1,11 @@
-package solutions;
-
-import com.google.common.collect.Lists;
-import org.junit.jupiter.api.Test;
-import solutions.algorithms._46;
+package solutions.algorithms;
 
 import static com.google.common.collect.Collections2.permutations;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsInAnyOrder;
+
+import com.google.common.collect.Lists;
+import org.junit.jupiter.api.Test;
 
 class _46Test {
 
